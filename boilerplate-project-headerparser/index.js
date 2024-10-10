@@ -25,7 +25,7 @@ app.get('/api/hello', function (req, res) {
 });
 
 // Ruta para /api/whoami
-app.get('S', (req, res) => {
+app.get('/api/whoami', (req, res) => {
   const ipAddress = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
 
   // Obtener el idioma preferido
